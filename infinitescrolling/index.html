@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .container::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background: url(https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000);
+    "
+    class="backdrop-blur-2xl h-fit grid place-items-center min-h-screen w-screen"
+  >
+    <h2
+      class="backdrop-blur-2xl text-white text-4xl uppercase font-semibold p-1"
+    >
+      Infinite Scrolling
+    </h2>
+    <div
+      class="container rounded-xl w-96 h-96 grid grid-cols-3 gap-2 place-items-center bg-red-400/10 overflow-y-scroll"
+      style="scroll-behavior: smooth scroll"
+    ></div>
+  </body>
+  <script src="app.js"></script>
+</html>
